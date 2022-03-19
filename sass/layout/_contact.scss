@@ -49,6 +49,10 @@
       &--icon {
         transform: translateY(0.4rem);
         margin-left: 1rem;
+        @media (max-width: 425px) {
+          transform: translateY(1rem);
+          margin-right: 1rem;
+        }
       }
       &--email {
         padding: 0.8rem 2rem 0.8rem 0rem;
@@ -149,4 +153,8 @@
 .animoji {
   height: 10rem;
   border-radius: 50%;
+}
+.send-mail {
+  text-decoration: none;
+  color: inherit;
 }
