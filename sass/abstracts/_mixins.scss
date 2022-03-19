@@ -1,0 +1,42 @@
+@mixin addTheme(
+  $backgroundColor,
+  $colorTextPrimary,
+  $colorPrimary,
+  $colorSecondary,
+  $colorTertiary
+) {
+  background-color: $backgroundColor;
+  padding: 1.3rem 2rem;
+  border: 3px solid $colorPrimary;
+  border-radius: 0.5rem;
+  &-name {
+    text-align: center;
+    color: $colorTextPrimary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  &-colors {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    &-color-primary {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: $colorPrimary;
+      border-radius: 50%;
+    }
+    &-color-secondary {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: $colorSecondary;
+      border-radius: 50%;
+    }
+    &-color-tertiary {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: $colorTertiary;
+      border-radius: 50%;
+    }
+  }
+}

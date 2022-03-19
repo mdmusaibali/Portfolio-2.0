@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="var(--color-primary)" />
+    <meta name="msapplication-navbutton-color" content="var(--color-primary)" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="var(--color-primary)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="scripts/script.js"></script>
+    <title>Musaib's Portfolio</title>
+  </head>
+  <body>
+    <div class="gradient__box--outer">
+      <div class="gradient__box--inner"></div>
+    </div>
+
+    <nav class="navigation">
+      <div class="themes hidden">
+        <p class="themes__text">Select your favourite theme</p>
+        <div class="themes__items">
+          <div
+            class="themes__items-item themes__items-item-light"
+            data-value="0"
+          >
+            <div class="themes__items-item-light-name">Light</div>
+            <div class="themes__items-item-light-colors">
+              <div class="themes__items-item-light-colors-color-primary">
+                &nbsp;
+              </div>
+              <div class="themes__items-item-light-colors-color-secondary">
+                &nbsp;
+              </div>
+              <div class="themes__items-item-light-colors-color-tertiary">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="themes__items-item themes__items-item-dark"
+            data-value="1"
+          >
+            <div class="themes__items-item-dark-name">Dark</div>
+            <div class="themes__items-item-dark-colors">
+              <div class="themes__items-item-dark-colors-color-primary">
+                &nbsp;
+              </div>
+              <div class="themes__items-item-dark-colors-color-secondary">
+                &nbsp;
+              </div>
+              <div class="themes__items-item-dark-colors-color-tertiary">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DESKTOP NAVIGATION -->
+      <div class="navigation__list--desktop">
+        <ul class="navigation__items--desktop">
+          <li class="navigation__item--desktop">
+            <a href="#" class="navigation__anchor active">Home</a>
+          </li>
+          <li class="navigation__item--desktop">
+            <a href="#" class="navigation__anchor">Projects</a>
+          </li>
+          <li class="navigation__item--desktop">
+            <a href="#" class="navigation__anchor">About</a>
+          </li>
+          <li class="navigation__item--desktop">
+            <a href="#" class="navigation__anchor">Contact</a>
+          </li>
+        </ul>
+        <button class="navigation__button navigation__button--theme">
+          <svg
+            class="navigation__theme--svg"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.53679 8.83841C2.81548 9.55092 2.85947 10.5009 3.63355 11.2838L5.23448 12.8847C4.38124 13.4213 2.7803 14.081 1.99742 14.8551C0.757138 16.0954 0.774731 17.7755 2.04141 19.0422C3.30808 20.3089 4.97939 20.3177 6.21967 19.0774C7.00255 18.3033 7.65348 16.6936 8.19006 15.8579L9.80859 17.4588C10.5827 18.2241 11.5415 18.2681 12.254 17.5468L13.1512 16.6232C13.723 16.0426 13.8109 15.3213 13.4327 14.6616C13.7845 14.5648 14.11 14.3537 14.3827 14.081L18.2355 10.2106C19.1679 9.27823 19.1503 8.16989 18.1739 7.19349L11.4711 0.490671C10.8554 -0.125074 10.0197 -0.169056 9.44794 0.402707C9.19284 0.649005 8.99932 1.01845 8.89377 1.50225C8.44515 3.5518 7.53913 5.4782 6.48356 6.83284C6.31643 7.06155 6.19329 7.29025 6.12291 7.51896C5.55115 7.29905 4.953 7.43099 4.45161 7.93239L3.53679 8.83841ZM13.1864 13.307C12.8345 13.6588 12.5003 13.6324 12.1484 13.2806L7.71505 8.856L7.72385 8.84721C7.38079 8.51295 7.25764 8.16109 7.71505 7.50137C8.65626 6.13793 9.60627 4.25551 10.1692 2.16198C10.1956 2.06522 10.2396 1.97725 10.3188 1.89809C10.4595 1.76614 10.6354 1.72216 10.8202 1.91568L14.8313 5.91802C14.6026 7.29905 13.5031 8.66248 12.6674 9.50693C12.5794 9.5861 12.4651 9.70045 12.597 9.8324C13.0105 10.2546 15.4822 8.49535 16.5202 7.60692L17.0832 8.16989C17.479 8.56572 17.4878 8.99675 17.1272 9.3486L13.1864 13.307ZM4.7155 9.67407L5.28726 9.1111C5.54235 8.8648 5.85902 8.8648 6.11412 9.12869L11.9549 14.9783C12.21 15.2334 12.2188 15.5412 11.9725 15.7963L11.4183 16.3593C11.1632 16.6232 10.8466 16.6144 10.5827 16.3505L8.48913 14.257C8.19006 13.9579 7.847 14.0634 7.53913 14.4681C6.93218 15.3301 5.90301 17.5116 5.30485 18.101C4.59235 18.7959 3.65993 18.8135 2.96502 18.1186C2.27011 17.4149 2.27011 16.4736 2.97382 15.7699C3.56318 15.1806 5.75347 14.1426 6.60671 13.5357C7.01135 13.2278 7.1257 12.8847 6.81783 12.5857L4.73309 10.5009C4.4692 10.2546 4.4692 9.92036 4.7155 9.67407ZM3.5016 17.582C3.77429 17.8459 4.17892 17.8459 4.44281 17.582C4.7155 17.3005 4.7067 16.9047 4.44281 16.6408C4.17012 16.3769 3.75669 16.3681 3.5016 16.6408C3.2553 16.9223 3.23771 17.3093 3.5016 17.582Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- MOBILE NAVIGATION -->
+      <div class="navigation__list--mobile">
+        <div class="navigation__buttons">
+          <div class="navigation__buttons-left-container">
+            <button class="navigation__button navigation__button--options">
+              <svg
+                class="navigation__theme--svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <line
+                  x1="88"
+                  y1="152"
+                  x2="424"
+                  y2="152"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="48px"
+                ></line>
+                <line
+                  x1="88"
+                  y1="256"
+                  x2="424"
+                  y2="256"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="48px"
+                ></line>
+                <line
+                  x1="88"
+                  y1="360"
+                  x2="424"
+                  y2="360"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="48px"
+                ></line>
+              </svg>
+            </button>
+            <p class="navigation__buttons-left-container-name">
+              <span class="name">Mohammed Musaib Ali</span><br /><span
+                class="job"
+                >Frontend Developer</span
+              >
+            </p>
+          </div>
+          <button class="navigation__button navigation__button--theme">
+            <svg
+              class="navigation__theme--svg"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.53679 8.83841C2.81548 9.55092 2.85947 10.5009 3.63355 11.2838L5.23448 12.8847C4.38124 13.4213 2.7803 14.081 1.99742 14.8551C0.757138 16.0954 0.774731 17.7755 2.04141 19.0422C3.30808 20.3089 4.97939 20.3177 6.21967 19.0774C7.00255 18.3033 7.65348 16.6936 8.19006 15.8579L9.80859 17.4588C10.5827 18.2241 11.5415 18.2681 12.254 17.5468L13.1512 16.6232C13.723 16.0426 13.8109 15.3213 13.4327 14.6616C13.7845 14.5648 14.11 14.3537 14.3827 14.081L18.2355 10.2106C19.1679 9.27823 19.1503 8.16989 18.1739 7.19349L11.4711 0.490671C10.8554 -0.125074 10.0197 -0.169056 9.44794 0.402707C9.19284 0.649005 8.99932 1.01845 8.89377 1.50225C8.44515 3.5518 7.53913 5.4782 6.48356 6.83284C6.31643 7.06155 6.19329 7.29025 6.12291 7.51896C5.55115 7.29905 4.953 7.43099 4.45161 7.93239L3.53679 8.83841ZM13.1864 13.307C12.8345 13.6588 12.5003 13.6324 12.1484 13.2806L7.71505 8.856L7.72385 8.84721C7.38079 8.51295 7.25764 8.16109 7.71505 7.50137C8.65626 6.13793 9.60627 4.25551 10.1692 2.16198C10.1956 2.06522 10.2396 1.97725 10.3188 1.89809C10.4595 1.76614 10.6354 1.72216 10.8202 1.91568L14.8313 5.91802C14.6026 7.29905 13.5031 8.66248 12.6674 9.50693C12.5794 9.5861 12.4651 9.70045 12.597 9.8324C13.0105 10.2546 15.4822 8.49535 16.5202 7.60692L17.0832 8.16989C17.479 8.56572 17.4878 8.99675 17.1272 9.3486L13.1864 13.307ZM4.7155 9.67407L5.28726 9.1111C5.54235 8.8648 5.85902 8.8648 6.11412 9.12869L11.9549 14.9783C12.21 15.2334 12.2188 15.5412 11.9725 15.7963L11.4183 16.3593C11.1632 16.6232 10.8466 16.6144 10.5827 16.3505L8.48913 14.257C8.19006 13.9579 7.847 14.0634 7.53913 14.4681C6.93218 15.3301 5.90301 17.5116 5.30485 18.101C4.59235 18.7959 3.65993 18.8135 2.96502 18.1186C2.27011 17.4149 2.27011 16.4736 2.97382 15.7699C3.56318 15.1806 5.75347 14.1426 6.60671 13.5357C7.01135 13.2278 7.1257 12.8847 6.81783 12.5857L4.73309 10.5009C4.4692 10.2546 4.4692 9.92036 4.7155 9.67407ZM3.5016 17.582C3.77429 17.8459 4.17892 17.8459 4.44281 17.582C4.7155 17.3005 4.7067 16.9047 4.44281 16.6408C4.17012 16.3769 3.75669 16.3681 3.5016 16.6408C3.2553 16.9223 3.23771 17.3093 3.5016 17.582Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="navigation__items--mobile">
+          <li class="navigation__item--mobile selected">
+            <a href="#" class="navigation__anchor">Home</a>
+          </li>
+          <li class="navigation__item--mobile">
+            <a href="#" class="navigation__anchor">Projects</a>
+          </li>
+          <li class="navigation__item--mobile">
+            <a href="#" class="navigation__anchor">About</a>
+          </li>
+          <li class="navigation__item--mobile">
+            <a href="#" class="navigation__anchor">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <svg
+        class="header__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 264 264"
+      >
+        <path
+          class="shadow"
+          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+        ></path>
+        <path
+          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+        ></path>
+        <defs>
+          <clipPath id="logoClip0">
+            <path fill="#fff" d="M0 0h256v256H0z"></path>
+          </clipPath>
+        </defs>
+      </svg>
+      <h1 class="heading__primary">Hey, I'm Musaib!</h1>
+      <p class="header__text">
+        I'm a designer and<span class="header__fun-text"
+          >i don't know when to give up</span
+        >.
+      </p>
+      <a href="#" class="btn__header">
+        More about me
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon"
+          style="top: 4px"
+        >
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline></svg
+      ></a>
+    </header>
+
+    <section class="section">
+      <h2 class="heading__secondary u-margin-bottom-small">My Projects💻</h2>
+      <div class="section__container">
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Maptodo
+            </h3>
+            <p class="section__container--element--text">
+              A simple map with a task on location
+            </p>
+            <p class="section__container--element--text--date">December 2021</p>
+          </div>
+          <div class="section__container--element--right bg-1">
+            <img class="section__logo" src="img/map1.png" alt="Maptodo Logo" />
+          </div>
+        </div>
+
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Hoddie
+            </h3>
+            <p class="section__container--element--text">
+              UI Design for a hoodie selling website.
+            </p>
+            <p class="section__container--element--text--date">December 2021</p>
+          </div>
+          <div class="section__container--element--right bg-2">
+            <img
+              class="section__logo"
+              src="img/hoodie1.png"
+              alt="Maptodo Logo"
+            />
+          </div>
+        </div>
+
+        <div
+          class="section__container--element u-margin-bottom-small u-border-bottom-none"
+        >
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Travella
+            </h3>
+            <p class="section__container--element--text">
+              UI Design for a vacation booking website.
+            </p>
+            <p class="section__container--element--text--date">
+              September 2021
+            </p>
+          </div>
+          <div class="section__container--element--right bg-3">
+            <img
+              class="section__logo"
+              src="img/travella1.png"
+              alt="Maptodo Logo"
+            />
+          </div>
+        </div>
+        <a href="#" class="btn__header">
+          View more projects
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon"
+            style="top: 4px"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline></svg
+        ></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="heading__secondary u-margin-bottom-small">My Skills</h2>
+      <div class="section__container">
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              HTML 5
+            </h3>
+            <p class="section__container--element--text">Advanced</p>
+            <p class="section__container--element--text--date">December 2021</p>
+          </div>
+          <div class="section__container--element--right bg-universal">
+            <img
+              class="section__logo"
+              src="img/html-5.png"
+              alt="Maptodo Logo"
+            />
+          </div>
+        </div>
+
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">CSS 3</h3>
+            <p class="section__container--element--text">Advanced</p>
+            <p class="section__container--element--text--date">December 2021</p>
+          </div>
+          <div class="section__container--element--right bg-universal">
+            <img class="section__logo" src="img/css-3.png" alt="Maptodo Logo" />
+          </div>
+        </div>
+
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              JavaScript
+            </h3>
+            <p class="section__container--element--text">Intermediate</p>
+            <p class="section__container--element--text--date">
+              September 2021
+            </p>
+          </div>
+          <div class="section__container--element--right bg-universal">
+            <img
+              class="section__logo"
+              src="img/java-script.png"
+              alt="Maptodo Logo"
+            />
+          </div>
+        </div>
+
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">SASS</h3>
+            <p class="section__container--element--text">Advanced</p>
+            <p class="section__container--element--text--date">
+              September 2021
+            </p>
+          </div>
+          <div class="section__container--element--right bg-universal">
+            <img class="section__logo" src="img/sass.png" alt="Maptodo Logo" />
+          </div>
+        </div>
+
+        <div class="section__container--element u-border-bottom-none">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">MySQL</h3>
+            <p class="section__container--element--text">Intermediate</p>
+            <p class="section__container--element--text--date">
+              September 2021
+            </p>
+          </div>
+          <div class="section__container--element--right bg-universal">
+            <img class="section__logo" src="img/sql.png" alt="Maptodo Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="heading__secondary">Experience</h2>
+      <p class="experience--text">I'd love to have some 😄.</p>
+    </section>
+
+    <section class="contact">
+      <div class="contact__left">
+        <div class="contact__left--top">
+          <div class="animoji-background">
+            <img class="animoji" src="img/animoji1.gif" alt="" />
+          </div>
+          <h2
+            class="heading__secondary u-margin-bottom-extra-small"
+            style="letter-spacing: 0px"
+          >
+            Hey, I'm Musaib!
+          </h2>
+          <p class="contact__left--text u-margin-bottom-small">
+            I'm a designer and<span class="header__fun-text"
+              >i don't know when to give up</span
+            >.
+          </p>
+          <a href="#" class="btn__header">
+            More about me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+              style="top: 4px"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline></svg
+          ></a>
+        </div>
+        <div class="contact__left--bottom">
+          <span class="contact__left--bottom--email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="contact__left--bottom--icon"
+              style="color: var(--color-primary)"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Send me an email</span
+          >
+        </div>
+      </div>
+      <div class="contact__right">
+        <svg
+          class="header__svg--small"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 264 264"
+        >
+          <path
+            class="shadow"
+            d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+          ></path>
+          <path
+            d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+          ></path>
+          <defs>
+            <clipPath id="logoClip0">
+              <path fill="#fff" d="M0 0h256v256H0z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+        <h2 class="heading__secondary" style="letter-spacing: 0px">
+          Any message for Me?
+        </h2>
+        <p class="contact__right--text u-margin-bottom-small">
+          Like seriously, anything.
+        </p>
+        <form action="#">
+          <input
+            type="text"
+            class="contact__right--input"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            class="contact__right--input"
+            placeholder="Your email"
+          />
+          <input
+            type="text"
+            class="contact__right--input"
+            placeholder="Your message for me"
+          />
+          <button class="contact__right--button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">Home</a>
+        </div>
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">Portfolio/Work</a>
+        </div>
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">Change theme</a>
+        </div>
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">About</a>
+        </div>
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">Now</a>
+        </div>
+        <div class="footer__grid--element">
+          <a href="#" class="footer__grid--element-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer__details-and-reset">
+        <div class="footer__name-and-reach">
+          <div class="footer__name-and-logo">
+            <div class="footer__logo">
+              <svg
+                class="header__svg--small"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 264 264"
+              >
+                <path
+                  class="shadow"
+                  d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+                ></path>
+                <path
+                  d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+                ></path>
+                <defs>
+                  <clipPath id="logoClip0">
+                    <path fill="#fff" d="M0 0h256v256H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="footer__name-box">
+              <p class="footer__name-box-name">Mohammed Musaib Ali</p>
+              <p class="footer__name-box-job">Frontend Developer</p>
+            </div>
+          </div>
+
+          <div class="footer__reach">
+            <a
+              aria-label="CodePen"
+              href="https://codepen.io/mdmusaibali"
+              target="_blank"
+              class="footer__reach-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                ></polygon>
+                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                <line x1="12" y1="2" x2="12" y2="8.5"></line></svg
+            ></a>
+            <a
+              aria-label="GitHub"
+              href="https://github.com/mdmusaibali"
+              target="_blank"
+              class="footer__reach-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path></svg
+            ></a>
+            <a
+              aria-label="Linkedin"
+              href="https://www.linkedin.com/in/mohammed-musaib-ali-b891601ba"
+              target="_blank"
+              class="footer__reach-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle></svg
+            ></a>
+            <a
+              aria-label="Email"
+              href="mailto:mdmusaibali@gmail.com?subject=Hey Musaib!"
+              class="footer__reach-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg
+            ></a>
+          </div>
+        </div>
+        <button class="btn--reset">Reset theme</button>
+      </div>
+    </footer>
+  </body>
+</html>

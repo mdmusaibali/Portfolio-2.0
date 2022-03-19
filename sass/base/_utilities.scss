@@ -1,0 +1,28 @@
+.visible {
+  //   transform: translateY(-100%);
+  transition: all 0.6s ease;
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: 100% !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 3rem;
+}
+.u-margin-bottom-extra-small {
+  margin-bottom: 0.4rem;
+}
+
+.u-border-bottom-none {
+  border-bottom: none !important;
+}
+
+.hidden {
+  // opacity: 0 !important;
+  // visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  transition: all 0.4s ease;
+}

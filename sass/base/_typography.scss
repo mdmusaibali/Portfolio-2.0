@@ -1,0 +1,32 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--color-primary);
+}
+.heading__primary {
+  color: var(--color-text-primary);
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  @media (max-width: 425px) {
+    font-size: 4rem;
+    letter-spacing: 1px;
+  }
+}
+.heading__secondary {
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  @media (max-width: 425px) {
+    font-size: 2.5rem;
+  }
+}
+.heading__tertiary {
+  color: var(--color-text-primary);
+}
+
+::selection {
+  background-color: var(--color-primary);
+}
