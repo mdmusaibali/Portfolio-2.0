@@ -51,6 +51,7 @@ const themeLight = {
   "--color-nav-hover": "#ccccccd5",
   "--color-gradient": "#303437",
   "--color-dark-gray": "#f7f6f3",
+  "--transparent": "#ffffffbf",
 };
 const themeDark = {
   "--color-background": "black",
@@ -64,6 +65,7 @@ const themeDark = {
   "--color-nav-hover": "#1a1f28",
   "--color-gradient": "#303437",
   "--color-dark-gray": "#2c323f",
+  "--transparent": "#111111bf",
 };
 const themes = [themeLight, themeDark];
 const themesItems = document.querySelectorAll(".themes__items-item");
@@ -74,7 +76,7 @@ const buttonReset = document.querySelector(".btn--reset");
 
 buttonReset.addEventListener("click", function () {
   var currentTheme = themes[0];
-  for (var i = 0; i < 11; i++) {
+  for (var i = 0; i < Object.keys(themeLight).length; i++) {
     var key = Object.keys(currentTheme)[i];
     document.documentElement.style.setProperty(key, `${currentTheme[key]}`);
   }
@@ -85,11 +87,10 @@ themesButton.forEach((el) => {
     themesBox.classList.toggle("hidden");
   });
 });
-
 themesItems.forEach(function (el) {
   el.addEventListener("click", function () {
     var currentTheme = themes[el.dataset.value];
-    for (var i = 0; i < 11; i++) {
+    for (var i = 0; i < Object.keys(themeLight).length; i++) {
       var key = Object.keys(currentTheme)[i];
       document.documentElement.style.setProperty(key, `${currentTheme[key]}`);
     }

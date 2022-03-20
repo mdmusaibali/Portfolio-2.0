@@ -21,6 +21,9 @@
       padding: 1rem 0 1rem 0rem;
       overflow: hidden;
       border-bottom: 1px solid var(--color-dark-gray);
+      @media (max-width: 425px) {
+        // position: relative;
+      }
       &:hover {
         cursor: pointer;
         border-left: 4px solid var(--color-primary);
@@ -30,11 +33,20 @@
       }
       &:hover > &--right {
         transform: rotate(6deg) scale(2) translate(-0.4rem, 0.5rem);
+        @media (max-width: 425px) {
+          // transform: rotate(0) scale(1.2) translateX(0);
+        }
       }
       &--right {
         padding: 0.8rem 1rem;
         border-radius: 1rem;
         transition: all 0.2s ease;
+        @media (max-width: 425px) {
+          // position: absolute;
+          // right: -3rem;
+          // right: 2rem;
+          // transform: rotate(6deg) scale(1) translate(0);
+        }
       }
       &--text {
         color: var(--color-text-secondary);

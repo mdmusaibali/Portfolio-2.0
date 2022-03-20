@@ -1,13 +1,46 @@
-.gradient__box--outer {
-  height: 100%;
+// .gradient__box--outer {
+//   height: 100%;
+//   background: linear-gradient(
+//     150deg,
+//     var(--color-tertiary),
+//     var(--color-secondary),
+//     var(--color-primary),
+//     var(--color-primary)
+//   );
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   width: 100%;
+//   filter: blur(8px);
+//   z-index: -1;
+//   opacity: 0.2;
+// }
+
+// .gradient__box--inner {
+//   position: absolute;
+//   inset: 0px;
+//   z-index: 10;
+//   backdrop-filter: blur(4px) saturate(300%);
+//   background: linear-gradient(
+//     -12deg,
+//     var(--color-gradient),
+//     var(--color-gradient),
+//     transparent
+//   );
+// }
+
+//Testing
+.gradient__box-outer {
+  height: calc(512px);
   background: linear-gradient(
     150deg,
-    var(--color-tertiary),
     var(--color-secondary),
+    var(--color-tertiary),
     var(--color-primary),
     var(--color-primary)
   );
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -17,15 +50,15 @@
   opacity: 0.2;
 }
 
-.gradient__box--inner {
+.gradient__box-inner {
   position: absolute;
   inset: 0px;
   z-index: 10;
   backdrop-filter: blur(4px) saturate(300%);
   background: linear-gradient(
     -12deg,
-    var(--color-gradient),
-    var(--color-gradient),
+    var(--color-background),
+    var(--color-background),
     transparent
   );
 }
