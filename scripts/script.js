@@ -1,17 +1,7 @@
 "use strict";
-// document.documentElement.style.setProperty("--color-primary", "#00d1b2");
 
 const headerFunText = document.querySelectorAll(".header__fun-text");
 
-//Test
-//Fun Text Generator
-// function generateRandom(min = 0, max = 100) {
-//   let difference = max - min;
-//   let rand = Math.random();
-//   rand = Math.floor(rand * difference);
-//   rand = rand + min;
-//   return rand;
-// }
 const funTexts = [
   "i love watching anime ❤",
   "i can fall asleep anywhere 😴",
