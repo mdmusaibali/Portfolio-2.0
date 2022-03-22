@@ -1,29 +1,57 @@
 :root {
   //Theme 1
-  --color-background: black;
-  --color-primary: #eb5757;
-  --color-primary-light: #f28e8e31;
-  --color-primary-dark: #eb3c3c;
-  --color-secondary: #f9bf52;
-  --color-tertiary: #1ab7ea;
-  --color-text-primary: #ffffffe5;
-  --color-text-secondary: #9a989a;
-  --color-nav-hover: #1a1f28;
-  --color-gradient: #303437;
-  --color-dark-gray: #2c323f;
-  --transparent: #111111bf;
+  // --color-background: black;
+  // --color-primary: #eb5757;
+  // --color-primary-light: #f28e8e31;
+  // --color-primary-dark: #eb3c3c;
+  // --color-secondary: #f9bf52;
+  // --color-tertiary: #1ab7ea;
+  // --color-text-primary: #ffffffe5;
+  // --color-text-secondary: #9a989a;
+  // --color-nav-hover: #1a1f28;
+  // --color-gradient: #303437;
+  // --color-dark-gray: #2c323f;
+  // --transparent: #111111bf;
 
   //   Theme2
-  --color-background: white;
-  --color-primary: #00d1b2;
-  --color-primary-light: #00d1b238;
-  --color-primary-dark: #049b84;
-  --color-secondary: #7bccca;
-  --color-tertiary: #ff94c4;
-  --color-text-primary: black;
-  --color-text-secondary: #363636;
-  --color-nav-hover: #ccccccd5;
-  --color-gradient: #303437;
-  --color-dark-gray: #c5c4c2;
-  --transparent: #ffffffbf;
+  // --color-background: white;
+  // --color-primary: #00d1b2;
+  // --color-primary-light: #00d1b238;
+  // --color-primary-dark: #049b84;
+  // --color-secondary: #7bccca;
+  // --color-tertiary: #ff94c4;
+  // --color-text-primary: black;
+  // --color-text-secondary: #363636;
+  // --color-nav-hover: #ccccccd5;
+  // --color-gradient: #303437;
+  // --color-dark-gray: #c5c4c2;
+  // --transparent: #ffffffbf;
+
+  // Theme3
+  // --color-background: #1e3253;
+  // --color-primary: #d884ff;
+  // --color-primary-light: #e4aaff3f;
+  // --color-primary-dark: #c243fd;
+  // --color-secondary: #eb505a;
+  // --color-tertiary: #aac86e;
+  // --color-text-primary: #ffffff;
+  // --color-text-secondary: #a0acbc;
+  // --color-nav-hover: #2c4c78;
+  // --color-gradient: #303437;
+  // --color-dark-gray: #2c4c78;
+  // --transparent: #21315bc5;
+
+  //Theme 4
+  // --color-background: #ecf5e3;
+  // --color-primary: #2d9641;
+  // --color-primary-light: #59976446;
+  // --color-primary-dark: #129029;
+  // --color-secondary: #b8723f;
+  // --color-tertiary: #b33938;
+  // --color-text-primary: #303e22;
+  // --color-text-secondary: #809070;
+  // --color-nav-hover: #c7e2ab;
+  // --color-gradient: #303437;
+  // --color-dark-gray: #c7e2ab;
+  // --transparent: #f0f0d57e;
 }

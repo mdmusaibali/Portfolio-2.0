@@ -38,6 +38,18 @@
         @include addTheme(black, #ffffffe5, #eb5757, #f9bf52, #1ab7ea);
       }
     }
+    &-item {
+      cursor: pointer;
+      &-purple {
+        @include addTheme(#1e3253, #ffffff, #d884ff, #eb505a, #aac86e);
+      }
+    }
+    &-item {
+      cursor: pointer;
+      &-green {
+        @include addTheme(#ecf5e3, #303e22, #2d9641, #b8723f, #b33938);
+      }
+    }
   }
 }
 

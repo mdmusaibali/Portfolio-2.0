@@ -35,7 +35,35 @@ const themeDark = {
   "--color-dark-gray": "#2c323f",
   "--transparent": "#111111bf",
 };
-const themes = [themeLight, themeDark];
+const themePurple = {
+  "--color-background": "#1e3253",
+  "--color-primary": "#d884ff",
+  "--color-primary-light": "#e4aaff3f",
+  "--color-primary-dark": "#c243fd",
+  "--color-secondary": "#eb505a",
+  "--color-tertiary": "#aac86e",
+  "--color-text-primary": "#ffffff",
+  "--color-text-secondary": "#a0acbc",
+  "--color-nav-hover": "#2c4c78",
+  "--color-gradient": "#303437",
+  "--color-dark-gray": "#2c4c78",
+  "--transparent": "#21315bc5",
+};
+const themeGreen = {
+  "--color-background": "#ecf5e3",
+  "--color-primary": "#2d9641",
+  "--color-primary-light": "#59976446",
+  "--color-primary-dark": "#129029",
+  "--color-secondary": "#b8723f",
+  "--color-tertiary": "#b33938",
+  "--color-text-primary": "#303e22",
+  "--color-text-secondary": "#809070",
+  "--color-nav-hover": "#c7e2ab",
+  "--color-gradient": "#303437",
+  "--color-dark-gray": "#c7e2ab",
+  "--transparent": "#f0f0d57e",
+};
+const themes = [themeLight, themeDark, themePurple, themeGreen];
 const themesItems = document.querySelectorAll(".themes__items-item");
 const themesBox = document.querySelector(".themes");
 const themesButton = document.querySelectorAll(".navigation__button--theme");
