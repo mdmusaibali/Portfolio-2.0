@@ -1,11 +1,7 @@
 "use strict";
 // document.documentElement.style.setProperty("--color-primary", "#00d1b2");
-const navMobileItems = document.querySelector(".navigation__items--mobile");
-const navButton = document.querySelector(".navigation__button--options");
+
 const headerFunText = document.querySelectorAll(".header__fun-text");
-navButton.addEventListener("click", function (e) {
-  navMobileItems.classList.toggle("visible");
-});
 
 //Test
 //Fun Text Generator

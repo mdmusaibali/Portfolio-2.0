@@ -25,10 +25,11 @@
 }
 
 .button--resume {
+  font-size: 1.3rem;
   display: inline-block;
   padding: 0.6rem 1rem;
   background-color: var(--color-primary);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   border-radius: 0.5rem;
   text-decoration: none;
   font-weight: 500;

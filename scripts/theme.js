@@ -1,3 +1,11 @@
+"use strict";
+//Navigation
+const navMobileItems = document.querySelector(".navigation__items--mobile");
+const navButton = document.querySelector(".navigation__button--options");
+navButton.addEventListener("click", function (e) {
+  navMobileItems.classList.toggle("visible");
+});
+
 //<========================Themes==============================>
 const themeLight = {
   "--color-background": "white",
