@@ -432,21 +432,31 @@
         <p class="contact__right--text u-margin-bottom-small">
           Like seriously, anything.
         </p>
-        <form action="#">
+        <form
+          action="https://formsubmit.co/mdmusaibali@gmail.com"
+          id="contactdetails"
+          method="POST"
+        >
           <input
             type="text"
             class="contact__right--input"
+            name="userName"
             placeholder="Your Name"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="contact__right--input"
+            name="userEmail"
             placeholder="Your email"
+            required
           />
           <input
             type="text"
             class="contact__right--input"
+            name="userMessage"
             placeholder="Your message for me"
+            required
           />
           <button class="contact__right--button">Submit</button>
         </form>

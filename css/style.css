@@ -494,6 +494,7 @@ body {
         width: 90%;
         margin: 0 auto; } }
     .contact__right--input {
+      color: var(--color-text-primary);
       display: block;
       width: 100%;
       padding: 1.5rem 1rem;
