@@ -1,8 +1,15 @@
 .themes {
   overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   padding: 1rem 2rem;
   height: 140px;
   transition: all 0.4s ease;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   @media (max-width: 769px) {
     // position: fixed;
     backdrop-filter: blur(40px) saturate(200%);
