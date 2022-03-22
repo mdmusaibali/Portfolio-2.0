@@ -16,15 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="scripts/script.js"></script>
-    <script defer src="scripts/theme.js"></script>
-    <title>Musaib's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../scripts/theme.js"></script>
+    <script defer src="../scripts/script.js"></script>
+    <title>Navigation</title>
   </head>
   <body>
-    <!-- <div class="gradient__box--outer">
-      <div class="gradient__box--inner"></div>
-    </div> -->
     <div class="gradient__box-outer" style="opacity: 0.2">
       <div class="gradient__box-inner"></div>
     </div>
@@ -74,18 +71,16 @@
       <div class="navigation__list--desktop">
         <ul class="navigation__items--desktop">
           <li class="navigation__item--desktop">
-            <a href="#" class="navigation__anchor active">Home</a>
+            <a href="../index.html" class="navigation__anchor">Home</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/projects.html" class="navigation__anchor"
-              >Projects</a
-            >
+            <a href="projects.html" class="navigation__anchor">Projects</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/about.html" class="navigation__anchor">About</a>
+            <a href="#" class="navigation__anchor active">About</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/now.html" class="navigation__anchor">Now</a>
+            <a href="now.html" class="navigation__anchor">Now</a>
           </li>
         </ul>
         <button class="navigation__button navigation__button--theme">
@@ -171,51 +166,116 @@
         </div>
         <ul class="navigation__items--mobile">
           <li class="navigation__item--mobile selected">
-            <a href="#" class="navigation__anchor">Home</a>
+            <a href="../index.html" class="navigation__anchor">Home</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/projects.html" class="navigation__anchor"
-              >Projects</a
-            >
+            <a href="projects.html" class="navigation__anchor">Projects</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/about.html" class="navigation__anchor">About</a>
+            <a href="about.html" class="navigation__anchor">About</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/about.html" class="navigation__anchor">Now</a>
+            <a href="now.html" class="navigation__anchor">Now</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="header">
-      <svg
-        class="header__svg"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 264 264"
-      >
-        <path
-          class="shadow"
-          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
-        ></path>
-        <path
-          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
-        ></path>
-        <defs>
-          <clipPath id="logoClip0">
-            <path fill="#fff" d="M0 0h256v256H0z"></path>
-          </clipPath>
-        </defs>
-      </svg>
+    <section class="section__about section">
+      <div class="animoji-background-about">
+        <img class="animoji" src="../img/animoji1.gif" alt="" />
+      </div>
       <h1 class="heading__primary">Hey, I'm Musaib!</h1>
       <p class="header__text">
         I'm a designer and<span class="header__fun-text"
           >i don't know when to give up</span
         >.
       </p>
-      <a href="#" class="btn__header">
-        More about me
+      <p class="section__about-text">
+        I'm VIth semester student at P.D.A College of Engineering. I LOVE
+        programming and developing new STUFF. Last year has been awesome for me.
+        I got to learn many programming languages and made many stunning
+        websites. I try to keep up with design and technology trends.
+        <br />
+        <br />
+        I've completed learning HTML, CSS, MySQL and JavaScript last year, i'm
+        currently learning SASS and i plan to learn some frameworks like Angular
+        and React this year. There's always a new thing to learn. It's like a
+        never ending cycle😉.
+        <br />
+        <br />
+        I get a lot of interesting ideas in my mind and i've always preferred to
+        implement them rather than just keeping them in the brain. I'm aspiring
+        to become a successful Full Stack Developer one day
+      </p>
+    </section>
+    <section
+      class="section"
+      style="border-bottom: 1px solid var(--color-dark-gray)"
+    >
+      <h2 class="heading__secondary u-margin-bottom-small">Education 📚</h2>
+      <div class="section__container">
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Poojya Doddappa Appa College Of Engineering
+            </h3>
+            <p class="section__container--element--text">
+              Bachelor's degree, Computer Science
+            </p>
+            <p class="section__container--element--text--date">2019 - 2023</p>
+          </div>
+        </div>
+
+        <div class="section__container--element">
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Gurukul Independent P.U College
+            </h3>
+            <p class="section__container--element--text">Science</p>
+            <p class="section__container--element--text--date">2017 - -2019</p>
+          </div>
+        </div>
+
+        <div
+          class="section__container--element u-margin-bottom-small u-border-bottom-none"
+        >
+          <div class="section__container--element--left">
+            <h3 class="heading__tertiary u-margin-bottom-extra-small">
+              Vasavadatta Vidya Vihar
+            </h3>
+            <p class="section__container--element--text">SSLC</p>
+            <p class="section__container--element--text--date">2005 - 2017</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button--resume">Resume</a>
+    </section>
+    <section
+      class="section"
+      style="border-bottom: 1px solid var(--color-dark-gray)"
+    >
+      <h2 class="heading__secondary">How can I help?</h2>
+      <p class="section__about-text">
+        Don't be a stranger — I'd love to help out or chat! Feel free to contact
+        me if you:
+      </p>
+      <ul class="about--list-items">
+        <li class="about--list-item">
+          &#8226; Are looking for a designer who codes?
+        </li>
+        <li class="about--list-item">&#8226; Want to trade design feedback?</li>
+        <li class="about--list-item">
+          &#8226; Want to collaborate on a cool project?
+        </li>
+        <li class="about--list-item">
+          &#8226; Have any cool movies, tv series, music/podcasts to recommend?
+        </li>
+        <li class="about--list-item">
+          &#8226; Like to chat over coffee, tea or whatever really ☕️
+        </li>
+      </ul>
+      <span class="contact__left--bottom--email section__about--button-mail">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -226,260 +286,21 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon"
-          style="top: 4px"
+          class="contact__left--bottom--icon"
+          style="color: var(--color-primary)"
         >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline></svg
-      ></a>
-    </header>
-
-    <section class="section">
-      <h2 class="heading__secondary u-margin-bottom-small">My Projects💻</h2>
-      <div class="section__container">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
         <a
-          href="projects/maptodo.html"
-          class="section__container--element-link"
-          style="text-decoration: none"
-        >
-          <div class="section__container--element">
-            <div class="section__container--element--left">
-              <h3 class="heading__tertiary u-margin-bottom-extra-small">
-                Maptodo
-              </h3>
-              <p class="section__container--element--text">
-                A map with a task on location
-              </p>
-              <p class="section__container--element--text--date">
-                December 2021
-              </p>
-            </div>
-            <div class="section__container--element--right bg-1">
-              <img
-                class="section__logo"
-                src="img/map1.png"
-                alt="Maptodo Logo"
-              />
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="projects/hoodie.html"
-          class="section__container--element-link"
-          style="text-decoration: none"
-        >
-          <div class="section__container--element">
-            <div class="section__container--element--left">
-              <h3 class="heading__tertiary u-margin-bottom-extra-small">
-                Hoddie
-              </h3>
-              <p class="section__container--element--text">
-                UI for a hoodie selling website.
-              </p>
-              <p class="section__container--element--text--date">
-                December 2021
-              </p>
-            </div>
-            <div class="section__container--element--right bg-2">
-              <img
-                class="section__logo"
-                src="img/hoodie1.png"
-                alt="Maptodo Logo"
-              />
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="projects/travella.html"
-          class="section__container--element-link"
-          style="text-decoration: none"
-        >
-          <div
-            class="section__container--element u-margin-bottom-small u-border-bottom-none"
-          >
-            <div class="section__container--element--left">
-              <h3 class="heading__tertiary u-margin-bottom-extra-small">
-                Travella
-              </h3>
-              <p class="section__container--element--text">
-                UI for a vacation booking website.
-              </p>
-              <p class="section__container--element--text--date">
-                September 2021
-              </p>
-            </div>
-            <div class="section__container--element--right bg-3">
-              <img
-                class="section__logo"
-                src="img/travella1.png"
-                alt="Maptodo Logo"
-              />
-            </div>
-          </div>
-        </a>
-        <a href="projects/projects.html" class="btn__header">
-          View more projects
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon"
-            style="top: 4px"
-          >
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline></svg
-        ></a>
-      </div>
+          href="mailto:mdmusaibali@gmail.com?subject=Hey Musaib!"
+          class="send-mail"
+          >Send me an email</a
+        ></span
+      >
     </section>
-
     <section class="section">
-      <h2 class="heading__secondary u-margin-bottom-small">My Skills</h2>
-      <div class="section__container">
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">
-              HTML 5
-            </h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">July 2021</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img
-              class="section__logo"
-              src="img/html-5.png"
-              alt="Maptodo Logo"
-            />
-          </div>
-        </div>
-
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">CSS 3</h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">July 2021</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/css-3.png" alt="Maptodo Logo" />
-          </div>
-        </div>
-
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">
-              JavaScript
-            </h3>
-            <p class="section__container--element--text">Intermediate</p>
-            <p class="section__container--element--text--date">December 2021</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img
-              class="section__logo"
-              src="img/java-script.png"
-              alt="Maptodo Logo"
-            />
-          </div>
-        </div>
-
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">SASS</h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">April 2022</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/sass.png" alt="Maptodo Logo" />
-          </div>
-        </div>
-
-        <div class="section__container--element u-border-bottom-none">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">MySQL</h3>
-            <p class="section__container--element--text">Intermediate</p>
-            <p class="section__container--element--text--date">June 2021</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/sql.png" alt="Maptodo Logo" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="heading__secondary">Experience</h2>
-      <p class="experience--text">I'd love to have some 😄.</p>
-    </section>
-
-    <section class="contact">
-      <div class="contact__left">
-        <div class="contact__left--top">
-          <div class="animoji-background">
-            <img class="animoji" src="img/animoji1.gif" alt="" />
-          </div>
-          <h2
-            class="heading__secondary u-margin-bottom-extra-small"
-            style="letter-spacing: 0px"
-          >
-            Hey, I'm Musaib!
-          </h2>
-          <p class="contact__left--text u-margin-bottom-small">
-            I'm a designer and<span class="header__fun-text"
-              >i don't know when to give up</span
-            >.
-          </p>
-          <a href="#" class="btn__header">
-            More about me
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon"
-              style="top: 4px"
-            >
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline></svg
-          ></a>
-        </div>
-        <div class="contact__left--bottom">
-          <span class="contact__left--bottom--email">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="contact__left--bottom--icon"
-              style="color: var(--color-primary)"
-            >
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-            <a
-              href="mailto:mdmusaibali@gmail.com?subject=Hey Musaib!"
-              class="send-mail"
-              >Send me an email</a
-            ></span
-          >
-        </div>
-      </div>
-      <div class="contact__right">
+      <div class="contact__right" style="width: 100%; padding: 3rem">
         <svg
           class="header__svg--small"
           xmlns="http://www.w3.org/2000/svg"
@@ -525,14 +346,13 @@
         </form>
       </div>
     </section>
-
     <footer class="footer">
       <div class="footer__grid">
         <div class="footer__grid--element">
-          <a href="#" class="footer__grid--element-link">Home</a>
+          <a href="../index.html" class="footer__grid--element-link">Home</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/projects.html" class="footer__grid--element-link"
+          <a href="projects.html" class="footer__grid--element-link"
             >Portfolio/Work</a
           >
         </div>
@@ -540,12 +360,10 @@
           <a href="#" class="footer__grid--element-link">Change theme</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/about.html" class="footer__grid--element-link"
-            >About</a
-          >
+          <a href="#" class="footer__grid--element-link">About</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/now.html" class="footer__grid--element-link">Now</a>
+          <a href="now.html" class="footer__grid--element-link">Now</a>
         </div>
         <div class="footer__grid--element">
           <a

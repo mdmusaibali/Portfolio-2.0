@@ -26,3 +26,15 @@
   padding: 0 !important;
   transition: all 0.4s ease;
 }
+
+.u-grid-2-col {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  &-item {
+    justify-self: center;
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
+}

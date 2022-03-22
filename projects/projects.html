@@ -16,15 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="scripts/script.js"></script>
-    <script defer src="scripts/theme.js"></script>
-    <title>Musaib's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../scripts/theme.js"></script>
+    <script defer src="../scripts/script.js"></script>
+
+    <title>Musaib | Projects</title>
   </head>
   <body>
-    <!-- <div class="gradient__box--outer">
-      <div class="gradient__box--inner"></div>
-    </div> -->
     <div class="gradient__box-outer" style="opacity: 0.2">
       <div class="gradient__box-inner"></div>
     </div>
@@ -74,18 +72,16 @@
       <div class="navigation__list--desktop">
         <ul class="navigation__items--desktop">
           <li class="navigation__item--desktop">
-            <a href="#" class="navigation__anchor active">Home</a>
+            <a href="../index.html" class="navigation__anchor">Home</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/projects.html" class="navigation__anchor"
-              >Projects</a
-            >
+            <a href="#" class="navigation__anchor active">Projects</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/about.html" class="navigation__anchor">About</a>
+            <a href="about.html" class="navigation__anchor">About</a>
           </li>
           <li class="navigation__item--desktop">
-            <a href="projects/now.html" class="navigation__anchor">Now</a>
+            <a href="now.html" class="navigation__anchor">Now</a>
           </li>
         </ul>
         <button class="navigation__button navigation__button--theme">
@@ -171,18 +167,16 @@
         </div>
         <ul class="navigation__items--mobile">
           <li class="navigation__item--mobile selected">
-            <a href="#" class="navigation__anchor">Home</a>
+            <a href="../index.html" class="navigation__anchor">Home</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/projects.html" class="navigation__anchor"
-              >Projects</a
-            >
+            <a href="#" class="navigation__anchor">Projects</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/about.html" class="navigation__anchor">About</a>
+            <a href="about.html" class="navigation__anchor">About</a>
           </li>
           <li class="navigation__item--mobile">
-            <a href="projects/about.html" class="navigation__anchor">Now</a>
+            <a href="now.html" class="navigation__anchor">Now</a>
           </li>
         </ul>
       </div>
@@ -190,55 +184,65 @@
 
     <header class="header">
       <svg
-        class="header__svg"
-        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 312 312"
         fill="none"
-        viewBox="0 0 264 264"
+        class="header__svg"
+        style="background-color: transparent; height: 7rem"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
+          d="M146.021 6.72671C149.203 3.14658 154.797 3.14658 157.979 6.7267L185.053 37.185C186.976 39.3486 189.918 40.3044 192.746 39.6845L232.552 30.9569C237.231 29.931 241.757 33.2191 242.227 37.986L246.227 78.541C246.511 81.4217 248.33 83.9242 250.982 85.0847L288.315 101.421C292.704 103.342 294.432 108.662 292.011 112.795L271.41 147.956C269.946 150.453 269.946 153.547 271.41 156.044L292.011 191.205C294.432 195.338 292.704 200.658 288.315 202.579L250.982 218.915C248.33 220.076 246.511 222.578 246.227 225.459L242.227 266.014C241.757 270.781 237.231 274.069 232.552 273.043L192.746 264.315C189.918 263.696 186.976 264.651 185.053 266.815L157.979 297.273C154.797 300.853 149.203 300.853 146.021 297.273L118.947 266.815C117.024 264.651 114.082 263.696 111.254 264.315L71.4478 273.043C66.7689 274.069 62.2434 270.781 61.7732 266.014L57.7728 225.459C57.4886 222.578 55.6704 220.076 53.0185 218.915L15.6846 202.579C11.2963 200.658 9.56767 195.338 11.9892 191.205L32.5904 156.044C34.0538 153.547 34.0538 150.453 32.5904 147.956L11.9892 112.795C9.56768 108.662 11.2963 103.342 15.6846 101.421L53.0185 85.0847C55.6704 83.9242 57.4886 81.4217 57.7728 78.541L61.7732 37.986C62.2434 33.2191 66.7689 29.931 71.4478 30.9569L111.254 39.6845C114.082 40.3044 117.024 39.3486 118.947 37.185L146.021 6.72671Z"
           class="shadow"
-          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+          fill="var(--grey200)"
         ></path>
         <path
-          d="M156.764 57.347c1.714-6.396-6.277-10.82-10.788-5.973L82.412 119.67c-3.263 3.506-1.62 9.226 3.007 10.466l23.883 6.399a6.354 6.354 0 014.493 7.782l-14.559 54.336c-1.714 6.396 6.277 10.821 10.789 5.973l63.563-68.295c3.264-3.507 1.62-9.227-3.007-10.467l-23.883-6.399a6.354 6.354 0 01-4.493-7.782l14.559-54.336z"
+          d="M146.021 6.72671C149.203 3.14658 154.797 3.14658 157.979 6.7267L185.053 37.185C186.976 39.3486 189.918 40.3044 192.746 39.6845L232.552 30.9569C237.231 29.931 241.757 33.2191 242.227 37.986L246.227 78.541C246.511 81.4217 248.33 83.9242 250.982 85.0847L288.315 101.421C292.704 103.342 294.432 108.662 292.011 112.795L271.41 147.956C269.946 150.453 269.946 153.547 271.41 156.044L292.011 191.205C294.432 195.338 292.704 200.658 288.315 202.579L250.982 218.915C248.33 220.076 246.511 222.578 246.227 225.459L242.227 266.014C241.757 270.781 237.231 274.069 232.552 273.043L192.746 264.315C189.918 263.696 186.976 264.651 185.053 266.815L157.979 297.273C154.797 300.853 149.203 300.853 146.021 297.273L118.947 266.815C117.024 264.651 114.082 263.696 111.254 264.315L71.4478 273.043C66.7689 274.069 62.2434 270.781 61.7732 266.014L57.7728 225.459C57.4886 222.578 55.6704 220.076 53.0185 218.915L15.6846 202.579C11.2963 200.658 9.56767 195.338 11.9892 191.205L32.5904 156.044C34.0538 153.547 34.0538 150.453 32.5904 147.956L11.9892 112.795C9.56768 108.662 11.2963 103.342 15.6846 101.421L53.0185 85.0847C55.6704 83.9242 57.4886 81.4217 57.7728 78.541L61.7732 37.986C62.2434 33.2191 66.7689 29.931 71.4478 30.9569L111.254 39.6845C114.082 40.3044 117.024 39.3486 118.947 37.185L146.021 6.72671Z"
+          fill="var(--color-primary)"
         ></path>
-        <defs>
-          <clipPath id="logoClip0">
-            <path fill="#fff" d="M0 0h256v256H0z"></path>
-          </clipPath>
-        </defs>
+        <path
+          d="M123.872 84.3044C123.972 78.974 116.87 77.0653 114.284 81.7274L77.8499 147.41C75.9791 150.783 78.3714 154.934 82.2273 155.006L102.13 155.379C104.955 155.432 107.201 157.764 107.149 160.589L106.301 205.868C106.201 211.198 113.303 213.107 115.889 208.445L152.323 142.762C154.194 139.389 151.801 135.238 147.945 135.166L128.043 134.794C125.218 134.741 122.971 132.408 123.024 129.583L123.872 84.3044Z"
+          class="shadow"
+          fill="rgba(0,0,0,0.2)"
+        ></path>
+        <path
+          d="M200.233 114.651C196.842 116.3 195.525 120.432 192.893 128.695L178.768 173.026C176.653 179.663 175.596 182.982 176.681 185.849C176.87 186.348 177.104 186.828 177.38 187.285C178.965 189.909 182.229 191.125 188.756 193.559C195.283 195.993 198.547 197.21 201.463 196.265C201.97 196.1 202.462 195.89 202.931 195.637C205.628 194.18 207.002 190.979 209.749 184.577L228.096 141.821C231.516 133.852 233.226 129.867 231.742 126.4C230.259 122.932 226.196 121.417 218.07 118.388L215.814 117.546C207.687 114.516 203.624 113.001 200.233 114.651Z"
+          class="shadow"
+          fill="rgba(0,0,0,0.2)"
+        ></path>
+        <path
+          d="M169.514 202.751C167.968 204.176 167.111 206.475 165.397 211.071C163.683 215.668 162.826 217.967 163.061 220.056C163.271 221.916 164.068 223.661 165.337 225.037C166.762 226.583 169.061 227.44 173.657 229.154L176.864 230.35C181.461 232.064 183.76 232.921 185.849 232.685C187.709 232.476 189.454 231.679 190.83 230.41C192.376 228.985 193.233 226.686 194.947 222.089C196.661 217.493 197.518 215.194 197.282 213.105C197.073 211.245 196.276 209.5 195.007 208.124C193.582 206.578 191.283 205.721 186.687 204.007L183.48 202.811C178.883 201.097 176.584 200.24 174.495 200.476C172.635 200.685 170.89 201.482 169.514 202.751Z"
+          class="shadow"
+          fill="rgba(0,0,0,0.2)"
+        ></path>
+        <path
+          d="M123.872 84.3044C123.972 78.974 116.87 77.0653 114.284 81.7274L77.8499 147.41C75.9791 150.783 78.3714 154.934 82.2273 155.006L102.13 155.379C104.955 155.432 107.201 157.764 107.149 160.589L106.301 205.868C106.201 211.198 113.303 213.107 115.889 208.445L152.323 142.762C154.194 139.389 151.801 135.238 147.945 135.166L128.043 134.794C125.218 134.741 122.971 132.408 123.024 129.583L123.872 84.3044Z"
+          fill="var(--grey0)"
+        ></path>
+        <path
+          d="M200.233 114.651C196.842 116.3 195.525 120.432 192.893 128.695L178.768 173.026C176.653 179.663 175.596 182.982 176.681 185.849C176.87 186.348 177.104 186.828 177.38 187.285C178.965 189.909 182.229 191.125 188.756 193.559C195.283 195.993 198.547 197.21 201.463 196.265C201.97 196.1 202.462 195.89 202.931 195.637C205.628 194.18 207.002 190.979 209.749 184.577L228.096 141.821C231.516 133.852 233.226 129.867 231.742 126.4C230.259 122.932 226.196 121.417 218.07 118.388L215.814 117.546C207.687 114.516 203.624 113.001 200.233 114.651Z"
+          fill="var(--grey0)"
+        ></path>
+        <path
+          d="M169.514 202.751C167.968 204.176 167.111 206.475 165.397 211.071C163.683 215.668 162.826 217.967 163.061 220.056C163.271 221.916 164.068 223.661 165.337 225.037C166.762 226.583 169.061 227.44 173.657 229.154L176.864 230.35C181.461 232.064 183.76 232.921 185.849 232.685C187.709 232.476 189.454 231.679 190.83 230.41C192.376 228.985 193.233 226.686 194.947 222.089C196.661 217.493 197.518 215.194 197.282 213.105C197.073 211.245 196.276 209.5 195.007 208.124C193.582 206.578 191.283 205.721 186.687 204.007L183.48 202.811C178.883 201.097 176.584 200.24 174.495 200.476C172.635 200.685 170.89 201.482 169.514 202.751Z"
+          fill="var(--grey0)"
+        ></path>
       </svg>
-      <h1 class="heading__primary">Hey, I'm Musaib!</h1>
-      <p class="header__text">
-        I'm a designer and<span class="header__fun-text"
-          >i don't know when to give up</span
-        >.
-      </p>
-      <a href="#" class="btn__header">
-        More about me
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon"
-          style="top: 4px"
-        >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline></svg
-      ></a>
+      <h1 class="heading__primary">My Projects💻</h1>
     </header>
 
-    <section class="section">
-      <h2 class="heading__secondary u-margin-bottom-small">My Projects💻</h2>
+    <section class="section section__project">
+      <h2
+        class="heading__secondary u-margin-bottom-extra-small"
+        style="font-weight: 800; letter-spacing: -0.2px; word-spacing: -3px"
+      >
+        Projects
+      </h2>
+      <p class="section__project--text">
+        Below are few of my very own projects.
+      </p>
       <div class="section__container">
         <a
-          href="projects/maptodo.html"
+          href="maptodo.html"
           class="section__container--element-link"
           style="text-decoration: none"
         >
@@ -257,7 +261,7 @@
             <div class="section__container--element--right bg-1">
               <img
                 class="section__logo"
-                src="img/map1.png"
+                src="../img/map1.png"
                 alt="Maptodo Logo"
               />
             </div>
@@ -265,7 +269,7 @@
         </a>
 
         <a
-          href="projects/hoodie.html"
+          href="hoodie.html"
           class="section__container--element-link"
           style="text-decoration: none"
         >
@@ -284,7 +288,7 @@
             <div class="section__container--element--right bg-2">
               <img
                 class="section__logo"
-                src="img/hoodie1.png"
+                src="../img/hoodie1.png"
                 alt="Maptodo Logo"
               />
             </div>
@@ -292,7 +296,7 @@
         </a>
 
         <a
-          href="projects/travella.html"
+          href="travella.html"
           class="section__container--element-link"
           style="text-decoration: none"
         >
@@ -313,115 +317,138 @@
             <div class="section__container--element--right bg-3">
               <img
                 class="section__logo"
-                src="img/travella1.png"
+                src="../img/travella1.png"
                 alt="Maptodo Logo"
               />
             </div>
           </div>
         </a>
-        <a href="projects/projects.html" class="btn__header">
-          View more projects
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon"
-            style="top: 4px"
-          >
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline></svg
-        ></a>
       </div>
     </section>
-
     <section class="section">
-      <h2 class="heading__secondary u-margin-bottom-small">My Skills</h2>
+      <h2
+        class="heading__secondary u-margin-bottom-extra-small"
+        style="font-weight: 800; letter-spacing: -0.2px; word-spacing: -3px"
+      >
+        ...or some other projects
+      </h2>
+      <p class="section__project--text">
+        Below are few of the projects i made during my learning journey.
+      </p>
       <div class="section__container">
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">
-              HTML 5
-            </h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">July 2021</p>
+        <a
+          href="natours.html"
+          class="section__container--element-link"
+          style="text-decoration: none"
+        >
+          <div class="section__container--element">
+            <div class="section__container--element--left">
+              <h3 class="heading__tertiary u-margin-bottom-extra-small">
+                Natours
+              </h3>
+              <p class="section__container--element--text">
+                Landing page for tours company.
+              </p>
+              <p class="section__container--element--text--date">March 2022</p>
+            </div>
+            <div class="section__container--element--right bg-1">
+              <img
+                class="section__logo"
+                src="../img/planet-earth.png"
+                alt="Maptodo Logo"
+              />
+            </div>
           </div>
-          <div class="section__container--element--right bg-universal">
-            <img
-              class="section__logo"
-              src="img/html-5.png"
-              alt="Maptodo Logo"
-            />
-          </div>
-        </div>
+        </a>
 
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">CSS 3</h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">July 2021</p>
+        <a
+          href="bankist.html"
+          class="section__container--element-link"
+          style="text-decoration: none"
+        >
+          <div class="section__container--element">
+            <div class="section__container--element--left">
+              <h3 class="heading__tertiary u-margin-bottom-extra-small">
+                Bankist
+              </h3>
+              <p class="section__container--element--text">
+                Landing page for banking system.
+              </p>
+              <p class="section__container--element--text--date">
+                January 2022
+              </p>
+            </div>
+            <div class="section__container--element--right bg-2">
+              <img
+                class="section__logo"
+                src="../img/bank.png"
+                alt="Maptodo Logo"
+              />
+            </div>
           </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/css-3.png" alt="Maptodo Logo" />
-          </div>
-        </div>
+        </a>
 
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">
-              JavaScript
-            </h3>
-            <p class="section__container--element--text">Intermediate</p>
-            <p class="section__container--element--text--date">December 2021</p>
+        <a
+          href="omnifood.html"
+          class="section__container--element-link"
+          style="text-decoration: none"
+        >
+          <div class="section__container--element">
+            <div class="section__container--element--left">
+              <h3 class="heading__tertiary u-margin-bottom-extra-small">
+                Omnifood
+              </h3>
+              <p class="section__container--element--text">
+                Landing page for food company.
+              </p>
+              <p class="section__container--element--text--date">August 2021</p>
+            </div>
+            <div class="section__container--element--right bg-3">
+              <img
+                class="section__logo"
+                src="../img/salad.png"
+                alt="Maptodo Logo"
+              />
+            </div>
           </div>
-          <div class="section__container--element--right bg-universal">
-            <img
-              class="section__logo"
-              src="img/java-script.png"
-              alt="Maptodo Logo"
-            />
-          </div>
-        </div>
+        </a>
 
-        <div class="section__container--element">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">SASS</h3>
-            <p class="section__container--element--text">Advanced</p>
-            <p class="section__container--element--text--date">April 2022</p>
+        <a
+          href="jsProjects.html"
+          class="section__container--element-link"
+          style="text-decoration: none"
+        >
+          <div
+            class="section__container--element u-margin-bottom-small u-border-bottom-none"
+          >
+            <div class="section__container--element--left">
+              <h3 class="heading__tertiary u-margin-bottom-extra-small">
+                Small JavaScript projects
+              </h3>
+              <p class="section__container--element--text">
+                Few of my javascript mini apps.
+              </p>
+              <p class="section__container--element--text--date">
+                November 2021
+              </p>
+            </div>
+            <div class="section__container--element--right bg-4">
+              <img
+                class="section__logo"
+                src="../img/rubik.png"
+                alt="Maptodo Logo"
+              />
+            </div>
           </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/sass.png" alt="Maptodo Logo" />
-          </div>
-        </div>
-
-        <div class="section__container--element u-border-bottom-none">
-          <div class="section__container--element--left">
-            <h3 class="heading__tertiary u-margin-bottom-extra-small">MySQL</h3>
-            <p class="section__container--element--text">Intermediate</p>
-            <p class="section__container--element--text--date">June 2021</p>
-          </div>
-          <div class="section__container--element--right bg-universal">
-            <img class="section__logo" src="img/sql.png" alt="Maptodo Logo" />
-          </div>
-        </div>
+        </a>
       </div>
-    </section>
-
-    <section class="section">
-      <h2 class="heading__secondary">Experience</h2>
-      <p class="experience--text">I'd love to have some 😄.</p>
     </section>
 
     <section class="contact">
       <div class="contact__left">
         <div class="contact__left--top">
           <div class="animoji-background">
-            <img class="animoji" src="img/animoji1.gif" alt="" />
+            <img class="animoji" src="../img/animoji1.gif" alt="" />
           </div>
           <h2
             class="heading__secondary u-margin-bottom-extra-small"
@@ -529,23 +556,19 @@
     <footer class="footer">
       <div class="footer__grid">
         <div class="footer__grid--element">
-          <a href="#" class="footer__grid--element-link">Home</a>
+          <a href="../index.html" class="footer__grid--element-link">Home</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/projects.html" class="footer__grid--element-link"
-            >Portfolio/Work</a
-          >
+          <a href="#" class="footer__grid--element-link">Portfolio/Work</a>
         </div>
         <div class="footer__grid--element">
           <a href="#" class="footer__grid--element-link">Change theme</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/about.html" class="footer__grid--element-link"
-            >About</a
-          >
+          <a href="about.html" class="footer__grid--element-link">About</a>
         </div>
         <div class="footer__grid--element">
-          <a href="projects/now.html" class="footer__grid--element-link">Now</a>
+          <a href="now.html" class="footer__grid--element-link">Now</a>
         </div>
         <div class="footer__grid--element">
           <a

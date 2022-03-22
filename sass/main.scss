@@ -11,8 +11,13 @@
 @import "layout/section";
 @import "layout/contact";
 @import "layout/footer";
-@import "layout/themes";
 
 @import "components/gradient";
+@import "components/animoji";
+
+@import "themes/themes";
 
 @import "pages/home";
+@import "pages/projects";
+@import "pages/project";
+@import "pages/about";

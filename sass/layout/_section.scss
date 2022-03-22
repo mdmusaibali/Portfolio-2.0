@@ -13,6 +13,7 @@
   }
   &__container {
     &--element {
+      border-bottom: 1px solid var(--color-dark-gray);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -20,10 +21,6 @@
       border-left: 0px solid transparent;
       padding: 1rem 0 1rem 0rem;
       overflow: hidden;
-      border-bottom: 1px solid var(--color-dark-gray);
-      @media (max-width: 425px) {
-        // position: relative;
-      }
       &:hover {
         cursor: pointer;
         border-left: 4px solid var(--color-primary);
@@ -75,6 +72,9 @@
   }
   &-3 {
     background-color: #ebccd2;
+  }
+  &-4 {
+    background-color: #15aabf;
   }
   &-universal {
     background-color: var(--color-nav-hover);
