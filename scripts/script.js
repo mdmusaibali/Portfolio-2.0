@@ -1,7 +1,7 @@
 "use strict";
 
 const headerFunText = document.querySelectorAll(".header__fun-text");
-if (!headerFunText.length === 0) {
+if (headerFunText.length != 0) {
   const funTexts = [
     "i love watching anime ❤",
     "i can fall asleep anywhere 😴",
