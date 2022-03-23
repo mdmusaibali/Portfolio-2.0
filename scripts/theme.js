@@ -63,7 +63,42 @@ const themeGreen = {
   "--color-dark-gray": "#c7e2ab",
   "--transparent": "#f0f0d57e",
 };
-const themes = [themeLight, themeDark, themePurple, themeGreen];
+const themeGray = {
+  "--color-background": "#313437",
+  "--color-primary": "#eb5757",
+  "--color-primary-light": "#553b3d",
+  "--color-primary-dark": "#f28e8e",
+  "--color-secondary": "#f9bf52",
+  "--color-tertiary": "#069ccd",
+  "--color-text-primary": "#ebebeb",
+  "--color-text-secondary": "#a0a2a3",
+  "--color-nav-hover": "#474c50",
+  "--color-gradient": "#303437",
+  "--color-dark-gray": "#474c50",
+  "--transparent": "#303437bf",
+};
+const themeMaroon = {
+  "--color-background": "#621832",
+  "--color-primary": "#ffd845",
+  "--color-primary-light": "#fce3891e",
+  "--color-primary-dark": "#fbd344",
+  "--color-secondary": "#d44159",
+  "--color-tertiary": "#ceaaef",
+  "--color-text-primary": "#fff",
+  "--color-text-secondary": "#b7a0ab",
+  "--color-nav-hover": "#79495c",
+  "--color-gradient": "#303437",
+  "--color-dark-gray": "#79495c",
+  "--transparent": "#621832bf",
+};
+const themes = [
+  themeLight,
+  themeDark,
+  themePurple,
+  themeGreen,
+  themeGray,
+  themeMaroon,
+];
 const themesItems = document.querySelectorAll(".themes__items-item");
 const themesBox = document.querySelector(".themes");
 const themesButton = document.querySelectorAll(".navigation__button--theme");
@@ -97,12 +132,27 @@ themesItems.forEach(function (el) {
 
 //Saving user Preferred theme to browser storage
 const userPreferredTheme = JSON.parse(localStorage.getItem("theme"));
-for (var i = 0; i < Object.keys(themeLight).length; i++) {
-  var key = Object.keys(userPreferredTheme)[i];
-  document.documentElement.style.setProperty(key, `${userPreferredTheme[key]}`);
+if (userPreferredTheme) {
+  for (var i = 0; i < Object.keys(themeLight).length; i++) {
+    var key = Object.keys(userPreferredTheme)[i];
+    document.documentElement.style.setProperty(
+      key,
+      `${userPreferredTheme[key]}`
+    );
+  }
 }
 
-buttonReset.addEventListener("click", function () {
-  var currentTheme = themes[0];
-  applyTheme(currentTheme);
-});
+if (buttonReset) {
+  buttonReset.addEventListener("click", function () {
+    var currentTheme = themes[0];
+    applyTheme(currentTheme);
+  });
+}
+
+//Opening themes section when change theme is choosed from footer
+const changeTheme = document.querySelector(".change-theme");
+if (changeTheme) {
+  changeTheme.addEventListener("click", function (e) {
+    themesBox.classList.toggle("hidden");
+  });
+}

@@ -1,15 +1,8 @@
 .themes {
-  overflow: hidden;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   padding: 1rem 2rem;
   height: 140px;
   transition: all 0.4s ease;
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+
   @media (max-width: 769px) {
     // position: fixed;
     backdrop-filter: blur(40px) saturate(200%);
@@ -28,12 +21,15 @@
     margin-bottom: 1rem;
   }
   &__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    white-space: nowrap;
+    overflow: auto hidden;
+    text-align: center;
 
     &-item {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      display: inline-block;
       cursor: pointer;
       &-light {
         @include addTheme(white, black, #00d1b2, #7bccca, #ff94c4);
@@ -55,6 +51,18 @@
       cursor: pointer;
       &-green {
         @include addTheme(#ecf5e3, #303e22, #2d9641, #b8723f, #b33938);
+      }
+    }
+    &-item {
+      cursor: pointer;
+      &-gray {
+        @include addTheme(#313437, #ebebeb, #eb5757, #f9bf52, #069ccd);
+      }
+    }
+    &-item {
+      cursor: pointer;
+      &-maroon {
+        @include addTheme(#621832, #fff, #ffd845, #d44159, #ceaaef);
       }
     }
   }

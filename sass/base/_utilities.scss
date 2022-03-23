@@ -20,8 +20,8 @@
 }
 
 .hidden {
-  // opacity: 0 !important;
-  // visibility: hidden !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
   height: 0 !important;
   padding: 0 !important;
   transition: all 0.4s ease;

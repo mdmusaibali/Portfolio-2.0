@@ -1,16 +1,16 @@
 :root {
-  --color-background: black;
-  --color-primary: #eb5757;
-  --color-primary-light: #f28e8e31;
-  --color-primary-dark: #eb3c3c;
-  --color-secondary: #f9bf52;
-  --color-tertiary: #1ab7ea;
-  --color-text-primary: #ffffffe5;
-  --color-text-secondary: #9a989a;
-  --color-nav-hover: #1a1f28;
+  --color-background: white;
+  --color-primary: #00d1b2;
+  --color-primary-light: #00d1b238;
+  --color-primary-dark: #049b84;
+  --color-secondary: #7bccca;
+  --color-tertiary: #ff94c4;
+  --color-text-primary: black;
+  --color-text-secondary: #363636;
+  --color-nav-hover: #ccccccd5;
   --color-gradient: #303437;
-  --color-dark-gray: #2c323f;
-  --transparent: #111111bf; }
+  --color-dark-gray: #c5c4c2;
+  --transparent: #ffffffbf; }
 
 * {
   margin: 0;
@@ -81,6 +81,8 @@ body {
   border-bottom: none !important; }
 
 .hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
   height: 0 !important;
   padding: 0 !important;
   transition: all 0.4s ease; }
@@ -677,16 +679,9 @@ body {
       transform: scale(1.1); }
 
 .themes {
-  overflow: hidden;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   padding: 1rem 2rem;
   height: 140px;
   transition: all 0.4s ease; }
-  .themes::-webkit-scrollbar {
-    width: 0;
-    height: 0; }
   @media (max-width: 769px) {
     .themes {
       backdrop-filter: blur(40px) saturate(200%);
@@ -701,12 +696,14 @@ body {
     font-weight: 600;
     margin-bottom: 1rem; }
   .themes__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem; }
+    white-space: nowrap;
+    overflow: auto hidden;
+    text-align: center; }
     .themes__items-item {
+      display: inline-block;
       cursor: pointer; }
+      .themes__items-item:not(:last-child) {
+        margin-right: 1rem; }
       .themes__items-item-light {
         background-color: white;
         padding: 1.3rem 2rem;
@@ -832,6 +829,70 @@ body {
             height: 1.5rem;
             width: 1.5rem;
             background-color: #b33938;
+            border-radius: 50%; }
+    .themes__items-item {
+      cursor: pointer; }
+      .themes__items-item-gray {
+        background-color: #313437;
+        padding: 1.3rem 2rem;
+        border: 3px solid #eb5757;
+        border-radius: 0.5rem; }
+        .themes__items-item-gray-name {
+          text-align: center;
+          color: #ebebeb;
+          font-weight: 400;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem; }
+        .themes__items-item-gray-colors {
+          display: flex;
+          justify-content: space-around;
+          gap: 1rem; }
+          .themes__items-item-gray-colors-color-primary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #eb5757;
+            border-radius: 50%; }
+          .themes__items-item-gray-colors-color-secondary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #f9bf52;
+            border-radius: 50%; }
+          .themes__items-item-gray-colors-color-tertiary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #069ccd;
+            border-radius: 50%; }
+    .themes__items-item {
+      cursor: pointer; }
+      .themes__items-item-maroon {
+        background-color: #621832;
+        padding: 1.3rem 2rem;
+        border: 3px solid #ffd845;
+        border-radius: 0.5rem; }
+        .themes__items-item-maroon-name {
+          text-align: center;
+          color: #fff;
+          font-weight: 400;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem; }
+        .themes__items-item-maroon-colors {
+          display: flex;
+          justify-content: space-around;
+          gap: 1rem; }
+          .themes__items-item-maroon-colors-color-primary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #ffd845;
+            border-radius: 50%; }
+          .themes__items-item-maroon-colors-color-secondary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #d44159;
+            border-radius: 50%; }
+          .themes__items-item-maroon-colors-color-tertiary {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: #ceaaef;
             border-radius: 50%; }
 
 .main__wrapper {
