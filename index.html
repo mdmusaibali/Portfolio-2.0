@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/theme.js"></script>
+    <script defer src="scripts/counter.js"></script>
     <title>Musaib's Portfolio</title>
   </head>
   <body>
@@ -763,5 +764,28 @@
         <button class="btn--reset">Reset theme</button>
       </div>
     </footer>
+    <div
+      class="counter"
+      style="
+        text-align: center;
+        color: var(--color-text-primary);
+        font-size: 1.2rem;
+        display: none;
+      "
+    >
+      <p style="font-weight: 400">
+        I'm really glad that you are one among
+        <span
+          id="visits"
+          style="
+            font-weight: 500;
+            background-color: var(--color-primary-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.5rem;
+          "
+        ></span>
+        people that visited my portfolio 😄
+      </p>
+    </div>
   </body>
 </html>
