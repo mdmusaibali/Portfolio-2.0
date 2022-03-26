@@ -97,6 +97,15 @@ body {
     .u-grid-2-col {
       grid-template-columns: 1fr; } }
 
+.u-grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr; }
+  .u-grid-1-col-item {
+    justify-self: center; }
+    @media (max-width: 425px) {
+      .u-grid-1-col-item {
+        width: 70% !important; } }
+
 .header {
   max-width: 782px;
   margin: 0 auto;
@@ -328,8 +337,7 @@ body {
       width: 90%; } }
   .section__logo {
     height: 5rem;
-    transform: rotate(0) scale(1) translate(0);
-    border-radius: 1rem; }
+    transform: rotate(0) scale(1) translate(0); }
   .section__container--element {
     border-bottom: 1px solid var(--color-dark-gray);
     display: flex;
@@ -398,6 +406,9 @@ body {
 
 .bg-4 {
   background-color: #15aabf; }
+
+.bg-5 {
+  background-color: #f0abfc; }
 
 .bg-universal {
   background-color: var(--color-nav-hover); }

@@ -38,3 +38,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+.u-grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  &-item {
+    justify-self: center;
+    @media (max-width: 425px) {
+      width: 70% !important;
+    }
+  }
+}
